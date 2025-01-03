@@ -13,6 +13,18 @@ const App = () => {
       .then((data) => setTasks(data));
   });
 
+    // Ajouter une tâche
+    const addTask = (title) => {
+      const newTask = { title, completed: false };
+      fetch('http://localhost:5000/tasks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newTask),
+      })
+        .then((response) => response.json())
+        .then((data) => setTasks([...tasks, data]));
+    };
+
   return (
     <div className="App">
       <h1>ToDo List</h1>
