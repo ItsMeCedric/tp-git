@@ -1,0 +1,29 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+span {
+  flex-grow: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+button {
+  background-color: #ff4d4d !important;
+}
+
+button:hover {
+  background-color: #cc0000;
+}

@@ -1,0 +1,15 @@
+form {
+    margin: 20px 0;
+  }
+  
+  input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
